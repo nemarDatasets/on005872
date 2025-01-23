@@ -1,0 +1,26 @@
+{
+    "SamplingFrequency": 500.0,
+    "StartTime": 0.0,
+    "Columns": [
+        "time",
+        "L-GAZE-X",
+        "L-GAZE-Y"
+    ],
+    "PhysioType": "eyetrack",
+    "EnvironmentCoordinates": "top-left",
+    "RecordedEye": "left",
+    "SampleCoordinateUnits": "pixel",
+    "SampleCoordinateSystem": "gaze-on-screen",
+    "L-GAZE-X": {
+        "description": "The x-coordinate of the gaze on the screen in pixels.",
+        "units": "a.u"
+    },
+    "L-GAZE-Y": {
+        "description": "The y-coordinate of the gaze on the screen in pixels.",
+        "units": "a.u"
+    },
+    "time": {
+        "description": "The timestamp of the data, in seconds.",
+        "units": "s"
+    }
+}
