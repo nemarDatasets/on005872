@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
-  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains raw neurophysiological recordings from a single subject, providing a benchmark resource for investigating the relationship between neural activity and oculomotor behavior.",
-  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking techniques. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
+  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains raw neurophysiological recordings from a single subject extracted from the larger EEGEyeNet dataset, enabling investigation of the neural correlates of oculomotor control and the relationship between brain activity and gaze dynamics.",
+  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking technology. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -33,6 +33,9 @@
       "term": "Neurophysiology",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D009482"
+    },
+    {
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -68,7 +71,7 @@
       "award_number": "1126"
     },
     {
-      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung (SNF)",
+      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
       "award_number": "100014175875"
     }
   ],
