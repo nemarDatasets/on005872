@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
+  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains raw neurophysiological recordings from a single subject, providing a benchmark resource for investigating the relationship between neural activity and oculomotor behavior.",
+  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking techniques. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,31 @@
     "Ard Kastrati": {},
     "Nicolas Langer": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005872.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "eye movement prediction"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "oculomotor control"
+    },
+    {
+      "term": "Neurophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009482"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.17605/OSF.IO/KTV7M",
       "identifier_type": "DOI",
@@ -34,6 +55,11 @@
       "identifier": "https://nemar.org/dataset/on005872",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005872.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -42,50 +68,24 @@
       "award_number": "1126"
     },
     {
-      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung (SNF)",
       "award_number": "100014175875"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "45.6 MB (3 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains data from a single subject collected during concurrent EEG and eye-tracking acquisition, derived from the larger EEGEyeNet dataset (Kastrati et al., 2021). The dataset provides a benchmark resource for developing and evaluating computational models of eye movement behavior using multimodal neurophysiological recordings.",
-  "methods_description": "Data were collected using simultaneous electroencephalography (EEG) and eye-tracking acquisition. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226). This BIDS version was prepared by reformatting a single-subject subset from the original EEGEyeNet dataset.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "eye tracking"
-    },
-    {
-      "term": "eye movement prediction"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "benchmark dataset"
-    },
-    {
-      "term": "BIDS"
-    }
-  ],
-  "source_hash": "55afee54a1b517acf0613a2876b790c3c143b46325acfb86cd6ffc05b51327e7"
+  "source_hash": "bffe3e939a72d35b090b5603fd74dffddf72b114db4aab1a3fda0be5825cfe78"
 }
