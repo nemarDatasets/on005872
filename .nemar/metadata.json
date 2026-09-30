@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
-  "description": "This dataset provides a BIDS-standardized version of simultaneously collected EEG and eye-tracking data from one subject, derived from the larger EEGEyeNet dataset. It supports research on eye movement prediction from electroencephalography and eye-tracking signals, following an established paradigm designed for benchmarking EEG-based eye movement decoding.",
+  "description": "A BIDS-standardized example dataset of simultaneously recorded EEG and eye-tracking data from a single subject, drawn from the EEGEyeNet resource. EEGEyeNet was designed as a dataset and benchmark for eye movement prediction from EEG. This version reformats the original Open Science Framework data to the BIDS standard.",
   "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking technology. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
   "license": "CC0",
   "dataset_type": "raw",
@@ -16,18 +16,23 @@
       "term": "EEG"
     },
     {
-      "term": "eye-tracking"
+      "term": "eye tracking"
     },
     {
-      "term": "eye movement"
-    },
-    {
-      "term": "BIDS"
+      "term": "Eye Movements",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
     },
     {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -39,7 +44,7 @@
     {
       "identifier": "10.48550/ARXIV.2111.05100",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005872",
@@ -63,7 +68,7 @@
       "award_number": "1126"
     },
     {
-      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung (SNF)",
+      "funder_name": "Swiss National Science Foundation (SNF)",
       "award_number": "100014175875"
     }
   ],
@@ -73,7 +78,7 @@
     "eeg"
   ],
   "sizes": [
-    "45.6 MB (3 files)"
+    "43.53 MB (3 files)"
   ],
   "formats": [
     ".edf",
